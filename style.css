@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: #3535ec;
+    --blue-dark: #120945;
+    --grey: #d4d7f5;
+    --green: #306753;
+    --pink: #de7eb6;
+    --yellow: #f2ad41;
+}
+/* 
+font: Livvic, sans-serif
+ */
+
+ html{
+    background-color: var(--grey);
+    font-family: Livvic, sans-serif;
+ }
+
+ .container{
+    max-width: 500px;
+    margin: 0 auto;
+ }
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+ .header-top{
+    height: 130px;
+    background-color: var(--blue-dark);
+    background-image: url(christmas-lights-clipart-40594.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+ }
+
+ .header-bottom{
+    height: 50px;
+    background-color: var(--blue);
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+ }
+ h1{
+    color: var(--yellow);
+    padding: 15px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+ }
+.total-slot{
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+/* Main */
+main{
+    padding: 8px;
+}
+
+.gift{
+    border: 4px solid white;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 8px;
+}
+.gift-info{
+    width: 70%;
+    padding: 8px;
+}
+.gift-price{
+    padding: 8px;
+    width: 20%;
+    font-weight: 700;
+}
+.gift-button{
+    width: 10%;
+    border: none;
+    background-color: white;
+    padding-left: 4px;
+    margin: 0;
+}
+
+form{
+    background-color: var(--pink);
+    border-radius: 8px;
+    display: flex;
+
+}
+.form-fields{
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    justify-content: space-between;
+}
+input{
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+#name-field{
+    width: calc(70% - 8px);
+}
+#price-field{
+    width: 30%;
+}
+#description-field{
+    width: 100%;
+}
+.form-button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    padding-right: 8px;
+}

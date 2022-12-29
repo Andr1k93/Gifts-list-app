@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifts list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link  href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>Gifts List</h1>
+            </div>
+            <div class="header-bottom">
+                Spesa Totale: <span class="total-slot"></span>
+            </div>
+        </header> 
+
+        <!-- Main -->
+        
+        <main>
+            <ul class="gifts-lists">
+            </ul>
+            
+            <!-- FORM -->
+            <form id="gift-form">
+                <div class="form-fields">
+                    <input type="text"  id="name-field" placeholder="Nome" autofocus required>
+                    <input type="number" id="price-field" placeholder="Prezzo" min="0.01" step="0.01" required>
+                    <input type="text" maxlength="30" id="description-field" placeholder="Regalo" required>
+                </div>
+                <button class="form-button" >➕</button>
+            </form>
+        </main>
+    </div>
+   <script src="script.js" ></script> 
+</body>
+</html>
